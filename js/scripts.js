@@ -1,13 +1,27 @@
 //define variables // 
 
-let startButton = document.getElementById('start');
-let saveScore = document.getElementById(saveScore)
+var startQuiz = document.getElementById('.start');
+var highScore = document.getElementById('.highScore')
+var timerCount = document.getElementById('.timer')
+var mainPage = document.getElementById('.main')
+var clearHighScore = document.getElementById('.clearScore')
+var submitScores = document.getElementById ('.submit')
+
+var questions = ['Strings are wrapped in?', 'Which is not a data type?','The "dot operator" represents?','Const variables may be redefined by updating the defined const variable?','String interpolations can be performed by using "template numerals"?','"Null" and "undefined" may be used interchangably?','How many primative data types are there?','Which will cause a syntax error?'];
+
 
 //funtions//
+function init() {
+
+
+
+
 function startQuiz(){
-    //start timer//
+    timerCount = 10;
 //find dom element to show an area on html and show the first question there
 getQuestion();
+startTimer()
+}
 }
 
 //get the next question
@@ -49,3 +63,9 @@ startButton.addEventListener('click', startQuiz);
 
 // save high score
 saveScore.addEventListener('click', saveHighScore)
+
+
+
+
+// Calls init() so that it fires when page opened
+init();
