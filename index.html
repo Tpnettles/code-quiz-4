@@ -4,51 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>The Coding Challenge</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <div>
-        <h1>Coding Quiz Challenge</h1>
-        <a href="./highscores.html">Click to see HighScores</a>
+    <!--Intro page-->
+    <div id = 'intro-page'>
+        <h1>The Ko0ky Coding/> Ch@llenge - J@va$cript</h1>
+
+        <div id='timer'></div>
         
-         <div id=questions>What is the proper way to log/print to a console? </div>
-         <br>
-            <div>Strings are wrapped in?</div>
-            <br>
-            <div>Which is not a primative data type?</div>
-            <br>
-            <div>Which is the "dot operator"?</div>
-            <br>
-            <div>Const variables may be redefined by updating the defined const variable?</div>
-            <br>
-            <div>String interpolations can be performed by using "template numerals"?</div>
-            <br>
-            <div>"Null" and "undefined" may be used interchangably?</div>
-            <br>
-            <div>How many primative data types are there?</div>
-            <br>
-            <div>Which will cause a syntax error?</div>
-           
-            <button class="start-button">Start</button>
+        <!--Start-up page-->
+       <div>
+         <a href="./highscores.html">Click to see HighScores</a>
+         <p>Welcome to <i>The Ko0ky Coding/> Ch@llenge - J@va$cript.</i> During this timed assessment, you will be challenged to answer 7 questions in 49 seconds. Correct answers will result in a higher score, but inccorect answers will result in a 7 second time deduction from the countdown timer. Click the start button to begin the assessment. Have fun, but respond quickly!</p>
+        
+         <button id="start-button">Start</button>
+        </div>
 
-<!-- single parenthesis, double parenthesis, brackets, or A & B
+       <!--Questions page-->
+        <div id='question-page' class='hide'>
+            <p id='questions'></p>
+        
+            <div id='answers'>
+                <button id="answer1"></button>
+                <button id="answer2"></button>
+                <button id="answer3"></button>
+                <button id="answer4"></button>
+                
+            </div>
+        </div>
+        
 
-Boolean, method, symbol, string
-
-., ;, ./, none of the above
-
-true/false
-
-True/false
-
-True/false
-
-3,4,5,6
-
--->
+        <!--Highscores page-->
+        <div id='final-page' class='hide'>
+            <p>You fininshed!</p>
+            <p id='final-score'></p>
+        <p>
+          
+            Enter Inintials: <input type="text" id='name'>
+            <button id='submit highScore'>Submit</button>
+        </p>
+    </div>
 
 
+<!--External Scripts-->
     <script src="./js/scripts.js"></script>
+    <script src='./js/questions.js'></script>
 </body>
 </html>
