@@ -6,50 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coding Challenge</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+  
 </head>
 <body>
     <!--Intro page-->
-    <div id = 'intro-page'>
+    <div class='container'>
         <h1>The Ko0ky Coding/> Ch@llenge - J@va$cript</h1>
 
         <div id='timer'></div>
         
         <!--Start-up page-->
-       <div>
-         <a href="./highscores.html">Click to see HighScores</a>
-         <p>Welcome to <i>The Ko0ky Coding/> Ch@llenge - J@va$cript.</i> During this timed assessment, you will be challenged to answer 7 questions in 49 seconds. Correct answers will result in a higher score, but inccorect answers will result in a 7 second time deduction from the countdown timer. Click the start button to begin the assessment. Have fun, but respond quickly!</p>
-        
-         <button id="start-button">Start</button>
+       <div id='introPage'>
+            <a href="./highscores.html">Click to see HighScores</a>
+            <p>Welcome to <i>The Ko0ky Coding/> Ch@llenge - J@va$cript.</i> During this timed assessment, you will be challenged to answer 7 questions in 49 seconds. Correct answers will result in a higher score, but inccorect answers will result in a 7 second time deduction from the countdown timer. Click the start button to begin the assessment. Have fun, but respond quickly!</p>
+            <button id="start-button">Start</button>
         </div>
-
+    
        <!--Questions page-->
-        <div id='question-page' class='hide'>
-            <p id='questions'></p>
-        
-            <div id='answers'>
-                <button id="answer1"></button>
-                <button id="answer2"></button>
-                <button id="answer3"></button>
-                <button id="answer4"></button>
-                
+        <div id='questionPage' class='hide'>
+            <p id='question'></p>
+            <div id='multipleChoices'>
+                <button id='choice1'></button>
+                <button id='choice2'></button>
+                <button id='choice3'></button>
+                <button id='choice4'></button> 
             </div>
         </div>
-        
 
         <!--Highscores page-->
         <div id='final-page' class='hide'>
             <p>You fininshed!</p>
             <p id='final-score'></p>
-        <p>
+            <p>
           
-            Enter Inintials: <input type="text" id='name'>
-            <button id='submit highScore'>Submit</button>
+            Enter : <input type="text" id='name'>
+            <button id='submit'>Submit</button>
         </p>
     </div>
 
 
 <!--External Scripts-->
-    <script src="./js/scripts.js"></script>
-    <script src='./js/questions.js'></script>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 </body>
-</html>
+</html
